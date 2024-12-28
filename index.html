@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEIZED BY KIRA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .ghost-icon {
+            font-size: 100px;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .text {
+            font-size: 48px;
+            letter-spacing: 5px;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+        }
+
+        .telegram-icon {
+            position: fixed;
+            bottom: 40px;
+            right: 30px;
+            font-size: 40px;
+            color: #ffffff;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-text {
+            font-size: 12px;
+            margin-top: 5px;
+            opacity: 0.8;
+        }
+
+        .telegram-icon:hover {
+            transform: scale(1.2);
+            filter: brightness(1.2);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ghost-icon">
+        <i class="fas fa-ghost"></i>
+    </div>
+    <div class="text">
+        SEIZED BY KIRA
+    </div>
+    <a href="https://t.me/enlout" target="_blank" class="telegram-icon">
+        <i class="fab fa-telegram"></i>
+        <span class="contact-text">contact</span>
+    </a>
+</body>
+</html>
